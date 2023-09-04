@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root{
+  /* Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  
+  /* Neutral */
+  --Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 0.93rem;
+  font-family: "Poppins", sans-serif;
+}
+
+body > header {
+  text-align: center;
+    padding: 1.5rem 0
+}
+
+.header__title {
+  font-weight: 200;
+  color: var(--Dark-Blue);
+  margin: 0;
+}
+
+.header__subtitle {
+  font-weight: 600;
+  color: var(--Dark-Blue);
+  margin: 0.5rem 0 1rem 0;
+}
+
+.header__text {
+  color: var(--Grayish-Blue);
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  border-radius: 3px;
+  box-shadow: 1px 10px 10px var(--Grayish-Blue);
+  padding: 1.5rem;
+}
+
+.card__title {
+  font-weight: 700;
+  color: var(--Dark-Blue);
+  margin: 0;
+}
+
+.card__text {
+  color: var(--Grayish-Blue);
+  margin: 0;
+}
+
+.card__footer {
+  text-align: end;
+}
+
+.card__cyan {
+  border-top: 5px solid var(--Cyan);
+}
+
+.card__red {
+  border-top: 5px solid var(--Red);
+}
+
+.card__orange {
+  border-top: 5px solid var(--Orange);
+}
+
+.card__blue {
+  border-top: 5px solid var(--Blue);
+}
+
+@media (min-width: 350px) {
+  .card__header{
+    text-align: start;
+  }
+
+  .header__title {
+    font-size: 1.3rem;
+  }
+
+  .header__subtitle {
+    font-size: 1.4rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .column__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  .card__title {
+    font-size: 1.1rem;
+  }
+
+  .card__text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__title, .header__subtitle {
+    font-size: 2rem;
+  }
+
+  .header__text {
+    font-size: 1rem;
+    white-space: pre-wrap;
+  }
+
+  .card {
+    max-width: 22rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 24rem;
+  }
+}
