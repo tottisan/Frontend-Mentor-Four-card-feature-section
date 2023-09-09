@@ -131,6 +131,10 @@ body > header {
 }
 
 @media (min-width: 768px) {
+  article {
+    flex-direction: row;
+  }
+  
   .header__title, .header__subtitle {
     font-size: 2rem;
   }
